@@ -1,0 +1,7 @@
+{% load i18n %}
+{% block subject %}{% blocktrans %}Your {{ app_name }} account has been banned{% endblocktrans %}{% endblock %}
+{% block plain %}{% blocktrans %}Your {{ app_name }} account has been banned. Reason: {{ reason }}.
+
+You can no longer sign in or use the service. If you believe this is a mistake, contact support.{% endblocktrans %}{% endblock %}
+{% block html %}<p>{% blocktrans %}Your {{ app_name }} account has been banned. Reason: <strong>{{ reason }}</strong>.{% endblocktrans %}</p>
+<p>{% trans "You can no longer sign in or use the service. If you believe this is a mistake, contact support." %}</p>{% endblock %}

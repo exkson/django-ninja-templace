@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-27 11:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: admin.py:25
+msgid "Personal info"
+msgstr "Informations personnelles"
+
+#: admin.py:28
+msgid "Admin"
+msgstr "Administration"
+
+#: admin.py:29
+msgid "Preferences"
+msgstr "Préférences"
+
+#: admin.py:31
+msgid "Permissions"
+msgstr "Permissions"
+
+#: admin.py:42
+msgid "Important dates"
+msgstr "Dates importantes"
+
+#: exceptions.py:16
+msgid "You're not allowed to perform this action."
+msgstr "Vous n'êtes pas autorisé à effectuer cette action."
+
+#: exceptions.py:29
+msgid "Resource not found."
+msgstr "Ressource introuvable."
+
+#: middleware.py:26
+msgid "Invalid or missing authentication token."
+msgstr "Jeton d'authentification invalide ou manquant."
+
+#: middleware.py:34
+msgid "Your account has been banned."
+msgstr "Votre compte a été suspendu."
+
+#: models/otp.py:26
+msgid "Email"
+msgstr "E-mail"
+
+#: models/otp.py:27
+msgid "Phone"
+msgstr "Téléphone"
+
+#: models/otp.py:39 models/user.py:140
+msgid "user"
+msgstr "utilisateur"
+
+#: models/otp.py:41
+msgid "channel"
+msgstr "canal"
+
+#: models/otp.py:42
+msgid "code hash"
+msgstr "empreinte du code"
+
+#: models/otp.py:43
+msgid "expires at"
+msgstr "expire le"
+
+#: models/otp.py:44
+msgid "consumed at"
+msgstr "utilisé le"
+
+#: models/otp.py:45
+msgid "attempts"
+msgstr "tentatives"
+
+#: models/otp.py:48
+msgid "OTP code"
+msgstr "code OTP"
+
+#: models/otp.py:49
+msgid "OTP codes"
+msgstr "codes OTP"
+
+#: models/user.py:33
+msgid "At least one of email or phone is required."
+msgstr "Au moins une adresse e-mail ou un numéro de téléphone est requis."
+
+#: models/user.py:51
+msgid "Superuser must have is_staff=True."
+msgstr "Un superutilisateur doit avoir is_staff=True."
+
+#: models/user.py:53
+msgid "Superuser must have is_superuser=True."
+msgstr "Un superutilisateur doit avoir is_superuser=True."
+
+#: models/user.py:76
+msgid "email address"
+msgstr "adresse e-mail"
+
+#: models/user.py:77
+msgid "phone number"
+msgstr "numéro de téléphone"
+
+#: models/user.py:79
+msgid "first name"
+msgstr "prénom"
+
+#: models/user.py:81
+msgid "last name"
+msgstr "nom"
+
+#: models/user.py:83
+msgid "country"
+msgstr "pays"
+
+#: models/user.py:87
+msgid "ISO 3166-1 alpha-2 code; populated from IP geocoding."
+msgstr "Code ISO 3166-1 alpha-2 ; renseigné par géolocalisation IP."
+
+#: models/user.py:90
+msgid "internal notes"
+msgstr "notes internes"
+
+#: models/user.py:93
+msgid "Admin-only notes; never exposed via the public API."
+msgstr "Notes réservées à l'administration ; jamais exposées via l'API publique."
+
+#: models/user.py:96
+msgid "parameters"
+msgstr "paramètres"
+
+#: models/user.py:100
+msgid "User-configurable settings (e.g. notifications.preferred_channel)."
+msgstr "Réglages configurables par l'utilisateur (ex. notifications.preferred_channel)."
+
+#: models/user.py:104
+msgid "staff status"
+msgstr "statut équipe"
+
+#: models/user.py:106
+msgid "Designates whether the user can log into the admin site."
+msgstr "Indique si l'utilisateur peut se connecter au site d'administration."
+
+#: models/user.py:109
+msgid "active"
+msgstr "actif"
+
+#: models/user.py:112
+msgid ""
+"Designates whether this user should be treated as active. Activated after "
+"successful OTP verification."
+msgstr "Indique si cet utilisateur doit être considéré comme actif. Activé après une vérification OTP réussie."
+
+#: models/user.py:117
+msgid "banned at"
+msgstr "suspendu le"
+
+#: models/user.py:121
+msgid ""
+"Set by staff when the account is banned; cleared on unban. A banned "
+"account's token is rejected at authentication time."
+msgstr "Renseigné par l'équipe lors de la suspension du compte ; effacé à la levée. Le jeton d'un compte suspendu est refusé à l'authentification."
+
+#: models/user.py:126
+msgid "ban reason"
+msgstr "motif de suspension"
+
+#: models/user.py:129
+msgid "Staff-supplied reason recorded when the account is banned."
+msgstr "Motif fourni par l'équipe lors de la suspension du compte."
+
+#: models/user.py:131
+msgid "date joined"
+msgstr "date d'inscription"
+
+#: models/user.py:141
+msgid "users"
+msgstr "utilisateurs"
+
+#: services/auth.py:71
+msgid "Unknown identifier."
+msgstr "Identifiant inconnu."
+
+#: services/auth.py:95 services/auth.py:111
+msgid "Invalid credentials"
+msgstr "Identifiants invalides"
+
+#: services/auth.py:133
+msgid "Invalid token"
+msgstr "Jeton invalide"
+
+#: services/otp.py:35
+msgid "No pending code. Request a new one."
+msgstr "Aucun code en attente. Demandez-en un nouveau."
+
+#: services/otp.py:37
+msgid "Code has expired. Request a new one."
+msgstr "Le code a expiré. Demandez-en un nouveau."
+
+#: services/otp.py:39
+msgid "Too many attempts. Request a new one."
+msgstr "Trop de tentatives. Demandez un nouveau code."
+
+#: services/otp.py:44
+msgid "Invalid code."
+msgstr "Code invalide."
+
+#: services/users.py:59
+msgid "Only staff can list users."
+msgstr "Seule l'équipe peut lister les utilisateurs."
+
+#: services/users.py:104
+msgid "Only staff can view a user."
+msgstr "Seule l'équipe peut consulter un utilisateur."
+
+#: services/users.py:120
+msgid "Only staff can ban a user."
+msgstr "Seule l'équipe peut suspendre un utilisateur."
+
+#: services/users.py:146
+msgid "Only staff can unban a user."
+msgstr "Seule l'équipe peut lever la suspension d'un utilisateur."
+
+#: templates/templated_email/account_banned.email:2
+#, python-format
+msgid "Your %(app_name)s account has been banned"
+msgstr "Votre compte %(app_name)s a été suspendu"
+
+#: templates/templated_email/account_banned.email:3
+#, python-format
+msgid ""
+"Your %(app_name)s account has been banned. Reason: %(reason)s.\n"
+"\n"
+"You can no longer sign in or use the service. If you believe this is a "
+"mistake, contact support."
+msgstr "Votre compte %(app_name)s a été suspendu. Motif : %(reason)s.\n\nVous ne pouvez plus vous connecter ni utiliser le service. Si vous pensez qu'il s'agit d'une erreur, contactez le support."
+
+#: templates/templated_email/account_banned.email:6
+#, python-format
+msgid ""
+"Your %(app_name)s account has been banned. Reason: <strong>%(reason)s</"
+"strong>."
+msgstr "Votre compte %(app_name)s a été suspendu. Motif : <strong>%(reason)s</strong>."
+
+#: templates/templated_email/account_banned.email:7
+msgid ""
+"You can no longer sign in or use the service. If you believe this is a "
+"mistake, contact support."
+msgstr "Vous ne pouvez plus vous connecter ni utiliser le service. Si vous pensez qu'il s'agit d'une erreur, contactez le support."
+
+#: templates/templated_email/otp.email:2
+#, python-format
+msgid "Your %(app_name)s verification code"
+msgstr "Votre code de vérification %(app_name)s"
+
+#: templates/templated_email/otp.email:3
+#, python-format
+msgid ""
+"Your %(app_name)s verification code is %(code)s. It expires in 10 minutes."
+msgstr "Votre code de vérification %(app_name)s est %(code)s. Il expire dans 10 minutes."
+
+#: templates/templated_email/otp.email:4
+#, python-format
+msgid ""
+"Your %(app_name)s verification code is <strong>%(code)s</strong>. It expires "
+"in 10 minutes."
+msgstr "Votre code de vérification %(app_name)s est <strong>%(code)s</strong>. Il expire dans 10 minutes."

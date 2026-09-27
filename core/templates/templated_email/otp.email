@@ -1,0 +1,4 @@
+{% load i18n %}
+{% block subject %}{% blocktrans %}Your {{ app_name }} verification code{% endblocktrans %}{% endblock %}
+{% block plain %}{% blocktrans %}Your {{ app_name }} verification code is {{ code }}. It expires in 10 minutes.{% endblocktrans %}{% endblock %}
+{% block html %}<p>{% blocktrans %}Your {{ app_name }} verification code is <strong>{{ code }}</strong>. It expires in 10 minutes.{% endblocktrans %}</p>{% endblock %}

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Lints and format-checks staged Python files with ruff.
+# Activate per-clone with: ./scripts/install-hooks.sh
+set -euo pipefail
+
+staged_py=$(git diff --cached --name-only --diff-filter=ACMR -- '*.py' || true)
+
+if [ -z "$staged_py" ]; then
+    exit 0
+fi
+
+mapfile -t files <<<"$staged_py"
+
+echo "==> ruff check --fix"
+uv run ruff check --fix --force-exclude "${files[@]}"
+
+echo "==> ruff format"
+uv run ruff format --force-exclude "${files[@]}"
+
+git add -- "${files[@]}"
